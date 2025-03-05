@@ -25,3 +25,16 @@ document.querySelectorAll(".toggle-button").forEach((button) => {
     img.classList.toggle("rotated");
   });
 });
+
+let wrapper = document.querySelector(".cours_wrapper");
+
+setInterval(() => {
+  wrapper.style.transition = "transform 1s ease-in-out";
+  wrapper.style.transform = "translateX(-25%)";
+
+  setTimeout(() => {
+    wrapper.appendChild(wrapper.firstElementChild);
+    wrapper.style.transition = "none";
+    wrapper.style.transform = "translateX(0)";
+  }, 1000);
+}, 2000);

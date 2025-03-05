@@ -72,8 +72,6 @@ header {
 
 section.see_video {
     width: 100%;
-    /* padding: 0px 50px; */
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -153,13 +151,65 @@ section.see_video {
                     }
                 }
             }
+            .instructor{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border-bottom: 1px solid #5e8df5;
+                h1{
+                    font-size: 25px;
+                }
+                .about_ins{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    a{
+                        font-size: 20px;
+                        color: #2563EB;
+                    }
+                }
+                .about_cours{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    img{
+                        border-radius: 100px;
+                    }
+                    &>div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h6{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-size: 14px;
+                            a{
+                                color: #2563EB;
+                                img{
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                h2{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
         }
 
         .video_sidebar {
-            width: 40%;
+            width: 32%;
+            max-height: 600px;
+            border-radius: 16px;
             display: flex;
             flex-direction: column;
-
+            align-items: start;
+            background-color: #E2E8F0;
+            padding: 10px;
             h1 {
                 font-size: 24px;
             }
@@ -171,7 +221,6 @@ section.see_video {
   .hidden {
       display: none;
   }
-
   .show {
     max-width: 450px;
     display: block;
@@ -180,8 +229,9 @@ section.see_video {
     align-items: center;
     gap: 10px;
     padding: 30px 10px 30px 10px;
-    border: 1px solid;
+    border: 1px solid #bfc1c4;
     transition: all .3s ease;
+    margin-bottom: 1px;
     input{
         width: 25px;
         height: 30px;
@@ -198,8 +248,6 @@ section.see_video {
     background-color: #0F172A;
     color: #ffff;
   }
-
-
   .rotated {
       transform: rotate(180deg);
       transition: transform 0.3s ease-in-out;
@@ -214,5 +262,63 @@ section.see_video {
  .toggle-button img {
      transition: transform 0.3s ease-in-out;
      margin-right: 10px;
+ }
+ section.courses_by_ins{
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+     margin-top: 20px;
+     h1{
+         font-size: 24px;
+     }
+     .cours{
+        width: 100%;
+         display: flex;
+         gap: 20px;
+         overflow: hidden;
+         position: relative;
+    }
+    .cours_wrapper {
+        display: flex;
+        width: 200%;
+        animation: slide 8s infinite linear;
+    }
+     .cours_card{
+        width: 25%;
+        flex: 0 0 auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        &>div{
+            display: flex;
+            align-items: center;
+        }
+     }
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+    
+            25% {
+                transform: translateX(-25%);
+            }
+    
+            50% {
+                transform: translateX(-50%);
+            }
+    
+            75% {
+                transform: translateX(-75%);
+            }
+    
+            100% {
+                transform: translateX(0%);
+            }
+        }
  }
   
