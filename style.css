@@ -2,7 +2,13 @@
     font-family: 'Poppins';
     src: url(./asesst/font/Poppins-Regular.ttf);
 }
-*{
+
+@font-face {
+    font-family: 'Poppins-Extrabold';
+    src: url(./asesst/font/Poppins-ExtraBold.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -10,6 +16,7 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+
 body {
     width: 100%;
     display: flex;
@@ -26,30 +33,155 @@ body {
     justify-content: center;
     transition: all .5s ease;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#0F172A ;
+    background-color: #0F172A;
     padding: 0px 10px;
-    img{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    img {
         width: 90px;
         border-radius: 30px;
         padding: 5px;
     }
-    nav{
+
+    nav {
         display: flex;
         align-items: center;
         gap: 10px;
-        svg{
+
+        svg {
             stroke: #ffff;
             transition: all 0.3s ease-in-out;
         }
-        svg:hover{
+
+        svg:hover {
             stroke: red;
         }
-        p{
+
+        p {
             color: #ffff;
         }
+    }
+}
+
+section.see_video {
+    width: 100%;
+    /* padding: 0px 50px; */
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .see_video_video {
+        width: 100%;
+        display: flex;
+        gap: 40px;
+
+        .video_bar {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .video_img {
+                width: 840px;
+                height: 580px;
+                background-image: url(./asesst/img/Frame\ 427318906.png);
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 10px;
+                    border-radius: 60px;
+                    background-color: aliceblue;
+                }
+            }
+
+            .video_description {
+                .buttons {
+                    display: flex;
+                    gap: 24px;
+                    border-bottom: 1px solid;
+                    padding-bottom: 30px;
+
+                    button {
+                        cursor: pointer;
+                        padding: 18px 42px;
+                        border: 1px solid #b3c8f7;
+                        font-size: 16px;
+                    }
+
+                    button:hover {
+                        background-color: #babdc4;
+                    }
+                }
+
+                .descriptions {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 20px;
+                    border-bottom: 1px solid #5e8df5;
+                    padding: 10px;
+
+                    .box {
+                        padding-bottom: 10px;
+
+                        h1 {
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: 141F38;
+                            font-family: 'Poppins-Extrabold';
+                        }
+
+                        p {
+                            padding-left: 20px;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
         }
+
+        .video_sidebar {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 24px;
+            }
+
+                    }
+    }
+}
+.video_team {
+    transition: all 0.5s;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    input:checked~ul {
+        display: none;
+    }
+
+    input:checked~.head>img {
+        transform: rotate(180deg);
+    }
+
 }
