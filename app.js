@@ -1,9 +1,27 @@
-const button = document.querySelector(".button");
-const checkbox = document.getElementById("checkbox");
-const boxContainer = document.querySelector(".box-container");
+document.querySelectorAll(".toggle-button").forEach((button) => {
+  button.addEventListener("click", function () {
+    let contents = button.parentElement.querySelectorAll(".content");
+    let img = button.querySelector("img");
 
-button.addEventListener("click", () => {
-  checkbox.checked = !checkbox.checked;
-  button.classList.toggle("checked", checkbox.checked);
-  boxContainer.style.display = checkbox.checked ? "flex" : "none"; // Boxlarni ko‘rsatish yoki yashirish
+    // Barcha ochilgan bo‘limlarni yopamiz
+    document.querySelectorAll(".content").forEach((c) => {
+      if (!Array.from(contents).includes(c)) {
+        c.classList.remove("show");
+      }
+    });
+
+    // Barcha rasmlarni qayta o‘rniga qaytaramiz
+    document.querySelectorAll(".toggle-button img").forEach((i) => {
+      if (i !== img) {
+        i.classList.remove("rotated");
+      }
+    });
+
+    // Har bir `.content` elementini ochish yoki yopish
+    contents.forEach((content) => {
+      content.classList.toggle("show");
+    });
+
+    img.classList.toggle("rotated");
+  });
 });
