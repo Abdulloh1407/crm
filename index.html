@@ -9,9 +9,25 @@
 </head>
 <body>
    <div id="root" class="">
+    <p id="lesson"></p>
     <header >
         <img src="./asesst/img/logo.png" alt="">
-     <nav>
+        <ul>
+            <li>
+                <a href="#lesson">Video darsliklar</a>
+            </li>
+            <li>
+                <a href="#teacher">Malakali ustozlar</a>
+            </li>
+            <li>
+                <a href="#course">Kurslarimiz</a>
+            </li>
+            <li>
+                <a href="#course1">Mulohazalar</a>
+            </li>
+        </ul>
+    
+        <nav>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star">
             <path
@@ -21,9 +37,9 @@
         </nav>
     </header>
    <section class="see_video">
-    <h2>Introduction to User Experience Design</h2>
+    <h2 class="title"id="lesson">Introduction to User Experience Design</h2>
       <div class="see_video_video">
-        <div class="video_bar">
+        <div class="video_bar" >
             <div class="video_img">
                <a href="https://www.youtube.com/watch?v=WgxaAqZjkVo&list=PLFRnhpV9odGBd_ZnX-wEhnnMav9L2G-FI" >
                 <img src="./asesst/svg/play.svg" alt="">
@@ -31,22 +47,22 @@
             </div>
             <div class="video_description">
                 <div class="buttons">
-                    <button>Details</button>
+                    <button >Details</button>
                     <button>Instructor</button>
                     <button>Courses</button>
                     <button>Reviews</button>
                 </div>
                 <div class="descriptions">
                     <div class="box">
-                        <h1>Course Overview</h1>
+                        <h1><b>Course Overview</b></h1>
                         <p>Embark on a transformative journey into the dynamic world of User Experience (UX) Design with our comprehensive course,
                         "Introduction to User Experience Design." This course is meticulously crafted to provide you with a foundational
                         understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital
                         landscape.</p>
                     </div>
                     <div class="box">
-                        <h1>Course Overview</h1>
-                        <p>Embark on a transformative journey into the dynamic world of User Experience (UX) Design with our comprehensive course,
+                        <h1><b>Course Overview</b></h1>
+                        <p id="teacher">Embark on a transformative journey into the dynamic world of User Experience (UX) Design with our comprehensive course,
                         "Introduction to User Experience Design." This course is meticulously crafted to provide you with a foundational
                         understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital
                         landscape.</p>
@@ -54,9 +70,9 @@
                 </div>
             </div>
             <div class="instructor">
-                <h1>Instructor</h1>
+                <h1 >Instructor</h1>
                 <div class="about_ins">
-                    <a href="./about_teacher.html">Suxrob Nurali</a>
+                    <a href="./user_profile/about_teacher.html">Suxrob Nurali</a>
                     <p> UX Designer</p>
                 </div>
                 <div class="about_cours">
@@ -67,7 +83,7 @@
                         <h6><a href=""><img src="./asesst/svg/play (1).svg" alt=""></a>15 Courses</h6>
                     </div>
                 </div>
-                <h2>Zamonaviy Dasturchilar uchun Donat qilish orqali meni qo'llab quvvatlang va ko'proq ilhomlantiruvchi va qiziqarli videolar yaratishimga yordam bering
+                <h2 id="course">Zamonaviy Dasturchilar uchun Donat qilish orqali meni qo'llab quvvatlang va ko'proq ilhomlantiruvchi va qiziqarli videolar yaratishimga yordam bering
                 😊. Qo'llovingiz uchun chin dildan rahmat!</h2>
             </div>
         </div>
@@ -127,7 +143,7 @@
                 </label>
                 <div class="content hidden hov">
                     <input type="checkbox">
-                    <p>Foydalanuvchi Uchun Moslashuvchan Dizayn?</p>
+                    <p>1. Foydalanuvchi Uchun Moslashuvchan Dizayn?</p>
                     <div>
                         <img src="./asesst/svg/video-recorder.svg" alt="">
                         <h6>4.min</h6>
@@ -135,7 +151,7 @@
                 </div>
                 <div class="content hidden hov">
                     <input type="checkbox">
-                    <p>Ishlatish qulayligini oshiruvchi interfeys elementlari</p>
+                    <p>2. Ishlatish qulayligini oshiruvchi interfeys elementlari</p>
                     <div>
                         <img src="./asesst/svg/video-recorder.svg" alt="">
                         <h6>4.min</h6>
@@ -143,7 +159,7 @@
                 </div>
                 <div class="content hidden hov">
                     <input type="checkbox">
-                    <p>Foydalanuvchilarning psixologik xususiyatlari?</p>
+                    <p>3. Foydalanuvchilarning psixologik xususiyatlari?</p>
                     <div>
                         <img src="./asesst/svg/video-recorder.svg" alt="">
                         <h6>4.min</h6>
@@ -158,7 +174,7 @@
                 </label>
                 <div class="content hidden hov">
                     <input type="checkbox">
-                    <p>Google interfeysi qanday o‘zgarib borgan</p>
+                    <p>1. Google interfeysi qanday o‘zgarib borgan</p>
                     <div>
                         <img src="./asesst/svg/video-recorder.svg" alt="">
                         <h6>9.min</h6>
@@ -166,7 +182,7 @@
                 </div>
                 <div class="content hidden hov">
                     <input type="checkbox">
-                    <p>Foydalanuvchilarning qaysi ehtiyojlariga javob bermagan?</p>
+                    <p>2. Foydalanuvchilarning qaysi ehtiyojlariga javob bermagan?</p>
                     <div>
                         <img src="./asesst/svg/video-recorder.svg" alt="">
                         <h6>8.min</h6>
@@ -177,7 +193,7 @@
         </div>
       </div>
    </section>
-   <section class="courses_by_ins">
+   <section class="courses_by_ins" >
     <h1>Hamma kuraslari  <a href="./about_teacher.html">Suxrob Nurali</a></h1>
     <div class="cours">
        <div class="cours_wrapper">
@@ -211,7 +227,7 @@
             <h6>Suxrob Nurali</h6>
             <h5>Bepul</h5>
         </div>
-        <div class="cours_card">
+        <div class="cours_card"  >
             <img src="./asesst/img/boshlang'ich.png" alt="">
             <h2>IT kunikmalari kursi</h2>
             <div>
@@ -227,6 +243,162 @@
        </div>
     </div>
    </section>
+   <section  class="learner_reviews" id="course1">
+    <h2>Learner Reviews</h2>
+    <div class="about_it">
+        <div class="stairs">
+            <div class="prefers">
+                
+                <h3><img src="./asesst/svg/Star2.svg" alt="">4.6</h3>
+                <p>146,951 reviews</p>
+            </div>
+            <div class="more_stairs">
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <p>80%</p>
+            </div>
+            <div class="more_stairs">
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <p>10%</p>
+            </div>
+            <div class="more_stairs">
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <p>5%</p>
+            </div>
+            <div class="more_stairs">
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <p>3%</p>
+            </div>
+            <div class="more_stairs">
+                <div><img src="./asesst/svg/Star2.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <div><img src="./asesst/svg/Star3.svg" alt=""></div>
+                <p>2%</p>
+            </div>
+        </div>
+        <div class="user_type">
+          <div class="reviews">
+            <div class="review">
+                <div>
+                    <img src="./asesst/img/channels4_profile (1).jpg" alt="">
+                </div>
+                <div class="title">
+                    <h2>Suxrob Nurali</h2>
+                    <div>
+                        <p><img src="./asesst/svg/Star2.svg" alt="">5</p>
+                        <h6>Izoh yozildi: 22 Mart, 2024</h6>
+                    </div>
+                    <p>Men avvaliga qo'rqib ketdim, dizayn tajribasi yo'q edi. Ammo o‘qituvchi Suxrob Nurali murakkab tushunchalarni
+                        oson hazm
+                        bo‘ladigan modullarga ajratishda ajoyib ish qildi. Video darsliklar qiziqarli bo'ldi va haqiqiy misollar
+                        mening
+                        tushunishimni mustahkamlashga yordam berdi.</p>
+                </div>
+            </div>
+            <div class="review">
+                <div>
+                    <img src="./asesst/img/channels4_profile (2).jpg" alt="">
+                </div>
+                <div class="title">
+                    <h2>Suxrob Nurali</h2>
+                    <div>
+                        <p><img src="./asesst/svg/Star2.svg" alt="">5</p>
+                        <h6>Izoh yozildi: 21 Mart, 2024</h6>
+                    </div>
+                    <p>Men avvaliga qo'rqib ketdim, dizayn tajribasi yo'q edi. Ammo o‘qituvchi Suxrob Nurali murakkab tushunchalarni
+                        oson hazm
+                        bo‘ladigan modullarga ajratishda ajoyib ish qildi. Video darsliklar qiziqarli bo'ldi va haqiqiy misollar
+                        mening
+                        tushunishimni mustahkamlashga yordam berdi.</p>
+                </div>
+            </div>
+            <div class="review">
+                <div>
+                    <img src="./asesst/img/channels4_profile (3).jpg" alt="">
+                </div>
+                <div class="title">
+                    <h2>Suxrob Nurali</h2>
+                    <div>
+                        <p><img src="./asesst/svg/Star2.svg" alt="">5</p>
+                        <h6>Izoh yozildi: 22 Mart, 2024</h6>
+                    </div>
+                    <p>Men avvaliga qo'rqib ketdim, dizayn tajribasi yo'q edi. Ammo o‘qituvchi Suxrob Nurali murakkab tushunchalarni
+                        oson hazm
+                        bo‘ladigan modullarga ajratishda ajoyib ish qildi. Video darsliklar qiziqarli bo'ldi va haqiqiy misollar
+                        mening
+                        tushunishimni mustahkamlashga yordam berdi.</p>
+                </div>
+            
+            </div>
+          </div>
+        </div>
+    </div>
+   </section>
+   <footer>
+   <div>
+    <img src="./asesst/img/logo.png" alt="">
+    <p>O'quvchilarni qulay va qiziqarli onlayn ta'lim orqali kuchaytirish.
+    Onlayn metor darsliklar - bu yuqori sifatli, moslashuvchan va arzon ta'lim tajribasini taqdim etishga bag'ishlangan etakchi
+    onlayn ta'lim platformasi.</p>
+   </div>
+   <div class="links">
+    <div>
+        <h2>Yordam uchun </h2>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Biz bilan bog'lanish</a></li>
+            <li><a href="#">Ko'rsatma</a></li>
+    </div>
+    <div>
+        <h2>Bizning Dasturlarimiz</h2>
+        <ul>
+            <li>
+                <a href="#">San'at va dizayn</a>
+            </li>
+            <li>
+                <a href="#">Bisnessni urgatish</a>
+            </li>
+            <li>
+                <a href="#">IT & Software</a>
+            </li>
+            <li>
+                <a href="#">Dasturlash tillar</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Biz bilan bog'lanish</h2>
+        <ul>
+            <li>
+                <a href="#">Tel: +(123) 456-7890</a>
+            </li>
+            <li>
+                <a href="#">Mail: onlinee_mentor@webkul.in</a>
+            </li>
+          
+        </ul>
+        <img src="./asesst/img/image 3.png" alt="">
+    </div>
+   </div>
+   </footer>
 </div>
 
 </body>

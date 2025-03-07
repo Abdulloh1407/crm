@@ -38,3 +38,14 @@ setInterval(() => {
     wrapper.style.transform = "translateX(0)";
   }, 1000);
 }, 2000);
+document.addEventListener("DOMContentLoaded", function () {
+  const reviewsContainer = document.querySelector(".reviews");
+  const reviews = Array.from(reviewsContainer.children);
+
+  // Sharhlarni dublikat qilish
+  reviews.forEach((review) => {
+    const clone = review.cloneNode(true);
+    reviewsContainer.appendChild(clone);
+  });
+});
+
