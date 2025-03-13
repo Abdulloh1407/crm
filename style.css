@@ -375,9 +375,6 @@ section.courses_by_ins {
         overflow: hidden;
         position: relative;
     }
-        .cours:hover .cours_wrapper {
-            animation-play-state: paused;
-        }
     .cours_wrapper {
         display: flex;
         gap: 18px;
@@ -671,4 +668,4 @@ footer {
     }   
    }
     
-}
+
